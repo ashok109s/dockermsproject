@@ -2,26 +2,26 @@
 version: "3.8"
 services:
   movies:
-    image: ashok109s/paytmmoviess:latest
+    image: ashok109s/paytmmoviess1:v1
     ports:
-      - 95:80
+      - 93:80
     deploy:
       replicas: 3
   train:
-    image: ashok109s/paytmtrains:latest
+    image: ashok109s/paytmtrainss
     ports:
-      - 96:80
+      - 91:80
     deploy:
       replicas: 3
   recharge:
-    image: ashok109s/paytmrecharges:latest
+    image: ashok109s/paytmrecharges1:v1
     ports:
-      - 97:80
+      - 92:80
     deploy:
       replicas: 3
   dth:
-    image: ashok109s/paytmdths:latest
+    image: ashok109s/paytmdths1:v1
     ports:
-      - 98:80
+      - 94:80
     deploy:
       replicas: 3
